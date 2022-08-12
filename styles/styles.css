@@ -1,3 +1,93 @@
+
+:root{
+    --mainTextColor: #000;
+    --secondaryTextColor: (51, 51, 51);
+    --mainLinkColor: #0da2b8;
+    --mainBorderColor: rgb(218, 218, 218);
+    --mainBgColor: rgb(249, 250, 251)
+}
+
 *{
     font-family: 'Inter', sans-serif;
+    line-height: 1.5em;
+    box-sizing: border-box;
+    color: var(--mainTextColor);
 }
+
+body{
+    background-color: var(--mainBgColor);
+}
+
+p, span, li{
+    color: var(--secondaryTextColor);
+    font-size: 1em;
+}
+
+a{
+    text-decoration: none;
+    color: var(--mainLinkColor);
+    font-weight: 500;
+}
+
+li{
+    line-height: 1.8em;
+}
+
+#main-container{
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.section-page{
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+#hero-wrap{
+    display: flex;
+    align-items: center;
+    gap: 4em;
+}
+
+#name{
+    font-size: 3em;
+    line-height: 1em;
+}
+
+#bio{
+    font-weight: 300;
+}
+
+#profile-pic{
+    border-radius: 50%;
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+    border: solid 2px black;
+}
+
+#email{
+    color: var(--mainTextColor);
+}
+
+#social-media{
+    display: flex;
+    justify-content: space-between;
+    column-gap: 1em;
+    flex-wrap: wrap;
+}
+
+#social-media a{
+    font-size: .8em;
+    color: var(--secondaryTextColor);
+    transition: .4s
+}
+
+#social-media a:hover{
+    color: var(--mainLinkColor);
+}
+
+#quals-skills{
+    list-style: none;
+}
+
