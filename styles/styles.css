@@ -1,19 +1,5 @@
 
 :root{
-    --mainTextColor-dark: #fff;
-    --secondaryTextColor-dark: #adb0b1;
-    --mainLinkColor-dark: #8d63c1;
-    --mainBorderColor-dark: #2b3031;
-    --mainBgColor-dark: #131415;
-    
-    --mainTextColor: var(--mainTextColor-dark);
-    --secondaryTextColor: var(--secondaryTextColor-dark);
-    --mainLinkColor: var(--mainLinkColor-dark);
-    --mainBorderColor: var(--mainBorderColor-dark);
-    --mainBgColor: var(--mainBgColor-dark);
-}
-
-.dark-mode-toggle{
     --mainTextColor-light: #000;
     --secondaryTextColor-light: (51, 51, 51);
     --mainLinkColor-light: #0da2b8;
@@ -25,6 +11,20 @@
     --mainLinkColor: var(--mainLinkColor-light);
     --mainBorderColor: var(--mainBorderColor-light);
     --mainBgColor: var(--mainBgColor-light);
+}
+
+.darkmode{
+    --mainTextColor-dark: #fff;
+    --secondaryTextColor-dark: #adb0b1;
+    --mainLinkColor-dark: #8d63c1;
+    --mainBorderColor-dark: #2b3031;
+    --mainBgColor-dark: #131415;
+    
+    --mainTextColor: var(--mainTextColor-dark);
+    --secondaryTextColor: var(--secondaryTextColor-dark);
+    --mainLinkColor: var(--mainLinkColor-dark);
+    --mainBorderColor: var(--mainBorderColor-dark);
+    --mainBgColor: var(--mainBgColor-dark);
 }
 
 *{
