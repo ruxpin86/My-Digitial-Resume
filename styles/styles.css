@@ -1,10 +1,10 @@
 
 :root{
-    --mainTextColor: #000;
-    --secondaryTextColor: (51, 51, 51);
-    --mainLinkColor: #0da2b8;
-    --mainBorderColor: rgb(218, 218, 218);
-    --mainBgColor: rgb(249, 250, 251);
+    --mainTextColor-light: #000;
+    --secondaryTextColor-light: (51, 51, 51);
+    --mainLinkColor-light: #0da2b8;
+    --mainBorderColor-light: rgb(218, 218, 218);
+    --mainBgColor-light: rgb(249, 250, 251);
 
     --mainTextColor-dark: #fff;
     --secondaryTextColor-dark: #adb0b1;
@@ -75,7 +75,7 @@ li{
     height: 150px;
     width: 150px;
     object-fit: cover;
-    border: solid 2px black;
+    border: solid 2px var(--mainBorderColor);
 }
 
 #email{
@@ -103,3 +103,15 @@ li{
     list-style: none;
 }
 
+#techstack-wrap{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    font-size: .9em;
+}
+
+.tech-card{
+    border: 2px solid var(--mainBorderColor);
+    padding: .5em 1em;
+    border-radius: 6px;
+}
