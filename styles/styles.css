@@ -39,6 +39,9 @@ a{
     text-decoration: none;
     color: var(--mainLinkColor);
     font-weight: 500;
+    border: 1px solid var(--mainBorderColor);
+    border-radius: 5px;
+    padding: .5em;
 }
 
 li{
@@ -126,4 +129,11 @@ li{
 .line-break{
     background-color: var(--mainBorderColor);
     height: 1px;
+}
+
+.edu-card{
+    border-left: solid 2px var(--mainBorderColor);
+    margin-top: 3em;
+    margin-bottom: 3em;
+    padding-left: 1em;
 }
