@@ -106,6 +106,16 @@ li{
     margin: 0 auto;
 }
 
+.mode-select{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.mode-select p{
+    font-size: 10px;
+}
+
 .section-page{
     padding-top: 1em;
     padding-bottom: 1em;
