@@ -191,6 +191,21 @@ li{
     padding-left: 1em;
 }
 
+.project-card{
+    padding-top: 1em;
+    padding-bottom: 1em;
+    border-top: 1px solid var(--mainBorderColor);
+}
+
+.project-card a{
+    color: var(--mainTextColor);
+    transition: .4s;
+}
+
+.project-card a:hover{
+    color: var(--mainLinkColor)
+}
+
 @media(max-width:600px){
     #hero-wrap{
         flex-direction: column;
@@ -212,6 +227,10 @@ li{
 
     a{
     border: 3px solid var(--mainBorderColor);
+    }
+
+    #quals-skills{
+        padding-left: 0;
     }
 
     .section-page{
