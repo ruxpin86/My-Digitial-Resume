@@ -45,6 +45,33 @@ label {
     transition: 0.4s;
 }
 
+label svg {
+    position: absolute;
+    width: 13px;
+    top: 3px;
+    z-index: 100;
+}
+
+label svg.sun-icon {
+    left: 3px;
+    fill: #fff;
+    transition: .3s;
+}
+
+label svg.moon-icon {
+    left: 24px;
+    fill: #7e7e7e;
+    transition: .3s;
+}
+
+input:checked+label svg.sun-icon {
+    fill: #7e7e7e;
+}
+
+input:checked+label svg.moon-icon {
+    fill: #fff;
+}
+
 label:after {
     content: "";
     width: 15px;
@@ -75,7 +102,7 @@ input:checked+label:after {
 }
 
 label:active:after {
-    width: 30px;
+    width: 20px;
 }
 
 body {
