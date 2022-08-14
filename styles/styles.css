@@ -54,7 +54,7 @@ label svg {
 
 label svg.sun-icon {
     left: 3px;
-    fill: #fff;
+    fill: rgb(235, 153, 21);
     transition: .3s;
 }
 
