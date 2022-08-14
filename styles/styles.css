@@ -1,11 +1,10 @@
-
-:root{
+:root {
     --mainTextColor-light: #000;
     --secondaryTextColor-light: (51, 51, 51);
     --mainLinkColor-light: #0da2b8;
     --mainBorderColor-light: rgb(218, 218, 218);
     --mainBgColor-light: rgb(249, 250, 251);
-    
+
     --mainTextColor: var(--mainTextColor-light);
     --secondaryTextColor: var(--secondaryTextColor-light);
     --mainLinkColor: var(--mainLinkColor-light);
@@ -13,13 +12,13 @@
     --mainBgColor: var(--mainBgColor-light);
 }
 
-.darkmode{
+.darkmode {
     --mainTextColor-dark: #fff;
     --secondaryTextColor-dark: #adb0b1;
     --mainLinkColor-dark: #8d63c1;
     --mainBorderColor-dark: #2b3031;
     --mainBgColor-dark: #131415;
-    
+
     --mainTextColor: var(--mainTextColor-dark);
     --secondaryTextColor: var(--secondaryTextColor-dark);
     --mainLinkColor: var(--mainLinkColor-dark);
@@ -27,26 +26,26 @@
     --mainBgColor: var(--mainBgColor-dark);
 }
 
-*{
+* {
     font-family: 'Montserrat', sans-serif;
     line-height: 1.5em;
     box-sizing: border-box;
     color: var(--mainTextColor);
 }
 
-label{
+label {
     width: 40px;
-    height:19px;
-    position:relative;
+    height: 19px;
+    position: relative;
     display: block;
     background-color: #ebebeb;
     border-radius: 50px;
-    box-shadow: inset 0px 5px 15px rgba(0,0,0,0.4), inset 0px -5px 15px rgba(255, 255, 255, 0.4);
+    box-shadow: inset 0px 5px 15px rgba(0, 0, 0, 0.4), inset 0px -5px 15px rgba(255, 255, 255, 0.4);
     cursor: pointer;
     transition: 0.4s;
 }
 
-label:after{
+label:after {
     content: "";
     width: 15px;
     height: 15px;
@@ -55,40 +54,42 @@ label:after{
     left: 2px;
     background: linear-gradient(180deg, #89d8ff, #0b97d8);
     border-radius: 50px;
-    box-shadow: 0px 5px 10px rgba(0,0,0,0.2);
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
     transition: 0.4s;
 }
 
-input{
+input {
     width: 0;
     height: 0;
     visibility: hidden;
 }
 
-input:checked + label{
+input:checked+label {
     background: #242424;
 }
 
-input:checked +label:after{
+input:checked+label:after {
     left: 38px;
     transform: translateX(-100%);
     background: linear-gradient(180deg, #777, #3a3a3a);
 }
 
-label:active:after{
+label:active:after {
     width: 30px;
 }
 
-body{
+body {
     background-color: var(--mainBgColor);
 }
 
-p, span, li{
+p,
+span,
+li {
     color: var(--secondaryTextColor);
     font-size: 1em;
 }
 
-a{
+a {
     text-decoration: none;
     color: var(--mainLinkColor);
     font-weight: 500;
@@ -97,46 +98,46 @@ a{
     padding: .5em;
 }
 
-li{
+li {
     line-height: 1.8em;
 }
 
-#main-container{
+#main-container {
     max-width: 700px;
     margin: 0 auto;
 }
 
-.mode-select{
+.mode-select {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
 }
 
-.mode-select p{
+.mode-select p {
     font-size: 10px;
 }
 
-.section-page{
+.section-page {
     padding-top: 1em;
     padding-bottom: 1em;
 }
 
-#hero-wrap{
+#hero-wrap {
     display: flex;
     align-items: center;
     gap: 4em;
 }
 
-#name{
+#name {
     font-size: 3em;
     line-height: 1em;
 }
 
-#bio{
+#bio {
     font-weight: 300;
 }
 
-#profile-pic{
+#profile-pic {
     border-radius: 50%;
     height: 150px;
     width: 150px;
@@ -144,116 +145,116 @@ li{
     border: solid 2px var(--mainBorderColor);
 }
 
-#email{
+#email {
     color: var(--mainTextColor);
 }
 
-#social-media{
+#social-media {
     display: flex;
     justify-content: space-between;
     column-gap: 1em;
     flex-wrap: wrap;
 }
 
-#social-media a{
+#social-media a {
     font-size: .8em;
     color: var(--secondaryTextColor);
     transition: .4s
 }
 
-#social-media a:hover{
+#social-media a:hover {
     color: var(--mainLinkColor);
 }
 
-#quals-skills{
+#quals-skills {
     list-style: none;
 }
 
-#techstack-wrap{
+#techstack-wrap {
     display: flex;
     flex-wrap: wrap;
     gap: 1em;
     font-size: .9em;
 }
 
-.tech-card{
+.tech-card {
     border: 2px solid var(--mainBorderColor);
     padding: .5em 1em;
     border-radius: 6px;
 }
 
-.work-exp-card{
+.work-exp-card {
     border-left: solid 2px var(--mainBorderColor);
     margin-top: 3em;
     margin-bottom: 3em;
     padding-left: 1em;
 }
 
-.line-break{
+.line-break {
     background-color: var(--mainBorderColor);
     height: 1px;
 }
 
-.edu-card{
+.edu-card {
     border-left: solid 2px var(--mainBorderColor);
     margin-top: 3em;
     margin-bottom: 3em;
     padding-left: 1em;
 }
 
-.project-card{
+.project-card {
     padding-top: 1em;
     padding-bottom: 1em;
-    border-top: 1px solid var(--mainBorderColor);
+    /* border-top: 1px solid var(--mainBorderColor); */
 }
 
-.project-card a{
+.project-card a {
     color: var(--mainTextColor);
     transition: .4s;
 }
 
-.project-card a:hover{
+.project-card a:hover {
     color: var(--mainLinkColor)
 }
 
-@media(max-width:600px){
-    #hero-wrap{
+@media(max-width:600px) {
+    #hero-wrap {
         flex-direction: column;
         gap: 1em;
     }
 
-    #profile-pic{
+    #profile-pic {
         width: 200px;
         height: 200px;
-    border: solid 5px var(--mainBorderColor);
+        border: solid 5px var(--mainBorderColor);
 
     }
 
-    #social-media{
-        flex-direction: column;
-        align-items: flex-start;
-        gap: .5em;
+    #social-media {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1em;
     }
 
-    a{
-    border: 3px solid var(--mainBorderColor);
+    a {
+        border: 3px solid var(--mainBorderColor);
     }
 
-    #quals-skills{
+    #quals-skills {
         padding-left: 0;
     }
 
-    .section-page{
+    .section-page {
         padding-top: 1em;
         padding-bottom: 1em;
     }
 
-    .work-exp-card{
+    .work-exp-card {
         border-left: none;
         padding-left: 0;
     }
 
-    .edu-card{
+    .edu-card {
         border-left: none;
         padding-left: 0;
     }
