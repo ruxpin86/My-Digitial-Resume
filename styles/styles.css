@@ -36,7 +36,7 @@
 label {
     width: 40px;
     height: 19px;
-    position: relative;
+    position: fixed;
     display: block;
     background-color: #ebebeb;
     border-radius: 50px;
